@@ -8,26 +8,26 @@ const items = [
   {
     id: 1,
     color: "from-red-300 to-blue-300",
-    title: "Retro (Web Design Company) Landing Page",
-    desc: "Website designed and developed as a landing page for a fictitious web design company as part of my formation as web developer.",
-    img: "https://res.cloudinary.com/dlrw6guss/image/upload/v1713048184/Portfolio/project1_ms6t9j.png?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://chipper-stroopwafel-ce450a.netlify.app",
+    title: "MernEats - Food Ordering Platform",
+    desc: "Website with frontend and backend designed and developed as an enterprise food ordering platform.",
+    img: "https://res.cloudinary.com/dlrw6guss/image/upload/v1713289193/Portfolio/project3_iw9tq3.png?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    link: "https://mern-food-ordering-app-frontend-7dmu.onrender.com",
   },
   {
     id: 2,
     color: "from-blue-300 to-violet-300",
-    title: "Out Here Trails Hotel & Resort Landing Page",
-    desc: "Hotel & Resort website designed and developed as part of my formation as web developer.",
-    img: "https://res.cloudinary.com/dlrw6guss/image/upload/v1713048184/Portfolio/project2_genz5v.png?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://classy-sfogliatella-cd1f65.netlify.app",
+    title: "Retro - Web Design Company's Landing Page",
+    desc: "Website designed and developed as a landing page for a fictitious web design company as part of my formation as web developer.",
+    img: "https://res.cloudinary.com/dlrw6guss/image/upload/v1713048184/Portfolio/project1_ms6t9j.png?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    link: "https://chipper-stroopwafel-ce450a.netlify.app",
   },
   {
     id: 3,
     color: "from-violet-300 to-purple-300",
-    title: "Retro (Web Design Company) Landing Page",
-    desc: "Website designed and developed as a landing page for a fictitious web design company as part of my formation as web developer.",
-    img: "https://res.cloudinary.com/dlrw6guss/image/upload/v1713048184/Portfolio/project1_ms6t9j.png?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://chipper-stroopwafel-ce450a.netlify.app",
+    title: "Out Here Trails Hotel & Resort Landing Page",
+    desc: "Hotel & Resort website designed and developed as part of my formation as web developer.",
+    img: "https://res.cloudinary.com/dlrw6guss/image/upload/v1713048184/Portfolio/project2_genz5v.png?auto=compress&cs=tinysrgb&w=1600&lazy=load",
+    link: "https://classy-sfogliatella-cd1f65.netlify.app",
   },
   {
     id: 4,
@@ -76,7 +76,7 @@ const PortfolioPage = () => {
                   </p>
                   <Link href={item.link} target="_blank" className="flex justify-end">
                     <button className="px-2 py-1 text-sm md:px-4 md:py-2 md:text-md lg:px-6 lg:py-3 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
-                      See Demo
+                      See
                     </button>
                   </Link>
                 </div>
@@ -102,7 +102,7 @@ const PortfolioPage = () => {
             </defs>
             <text fill="#000">
               <textPath xlinkHref="#circlePath" className="text-xl">
-                Full Stack Mobile Developer
+                Full Stack Developer
               </textPath>
             </text>
           </motion.svg>

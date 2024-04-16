@@ -10,11 +10,19 @@ const AboutPage = () => {
   const { scrollYProgress } = useScroll({ container: containerRef });
 
   const skillRef = useRef();
-  const isSkillRefInView = useInView(skillRef, {once:true}, {margin: "-100px"});
+  const isSkillRefInView = useInView(
+    skillRef,
+    { once: true },
+    { margin: "-100px" }
+  );
   //const isSkillRefInView = useInView(skillRef, { margin: "-100px" });
 
   const experienceRef = useRef();
-  const isExperienceRefInView = useInView(experienceRef, {once:true}, { margin: "-100px" });
+  const isExperienceRefInView = useInView(
+    experienceRef,
+    { once: true },
+    { margin: "-100px" }
+  );
   //const isExperienceRefInView = useInView(experienceRef, { margin: "-100px" });
 
   return (
@@ -27,7 +35,7 @@ const AboutPage = () => {
       {/* CONTAINER */}
       <div className="h-full overflow-scroll lg:flex" ref={containerRef}>
         {/* TEXT CONTAINER */}
-        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-48 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-0 xl:w-1/2">
+        <div className="p-4 sm:p-8 md:p-12 lg:p-20 xl:p-42 flex flex-col gap-24 md:gap-32 lg:gap-48 xl:gap-64 lg:w-2/3 lg:pr-8 xl:pr-4 xl:w-1/2">
           {/* BIOGRAPHY CONTAINER */}
           <div className="flex flex-col gap-12 justify-center">
             {/* BIOGRAPHY IMAGE */}
@@ -42,14 +50,14 @@ const AboutPage = () => {
             <h1 className="font-bold text-2xl">BIOGRAPHY</h1>
             {/* BIOGRAPHY DESC */}
             <p className="text-lg">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum
-              harum quibusdam cupiditate nobis accusamus sed aut aperiam,
-              reiciendis numquam! Voluptas voluptatibus obcaecati dolore itaque
-              suscipit! Vel doloremque numquam quam nihil.
+              My name is Jose Lovon, and I am a web and mobile developer with a
+              passion for cover the business needs with creativity and
+              proficiency. Through this portfolio, I&apos;m excited to showcase my
+              work, and share my journey with you.
             </p>
             {/* BIOGRAPHY QUOTE */}
             <span className="italic">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            &quot;Programming is not a job, it is a passion.&quot;
             </span>
             {/* BIOGRAPHY SIGN SVG*/}
             <div className="self-end">
@@ -136,7 +144,7 @@ const AboutPage = () => {
                 Node.js
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Nest.js
+                MS SQL Server
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Express.js
@@ -145,34 +153,28 @@ const AboutPage = () => {
                 Spring Boot
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                GraphQL
+                Oracle Database
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Apollo
+                Xamarin Forms
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Redux
+                Cloudinary
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Framer Motion
+                Stripe
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Three.js
+                Auth0 Authentication
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                WebGL
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Webpack
+                BitBucket
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Vite
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                Docker
-              </div>
-              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
-                AWS
+                Azure DevOps
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Firebase
@@ -182,6 +184,9 @@ const AboutPage = () => {
               </div>
               <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
                 Figma
+              </div>
+              <div className="rounded  p-2 text-sm cursor-pointer bg-black text-white hover:bg-white hover:text-black">
+                Email JS
               </div>
             </motion.div>
             {/* SKILL SCROLL SVG */}
@@ -234,20 +239,21 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior JavaScript Engineer
+                    Senior Mobile Developer
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I led web development, offering expertise in JavaScript
-                    frameworks.{" "}
+                    Leader of the mobile development team in a data analysis
+                    company. Responsible of several projects and their
+                    presentation to the stakeholders.
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2024 - Present
+                    2023
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Apple
+                    Lucky Group SAC
                   </div>
                 </div>
                 {/* CENTER */}
@@ -277,20 +283,20 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Senior React Developer
+                    Mobile Developer Intern
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I spearheaded React-based application development,
-                    leveraging advanced skills.{" "}
+                    Development of requirements and projects assigned by my
+                    mobile development leader.
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2019 - 2024{" "}
+                    2022-2023
                   </div>
                   {/* JOB COMPANY */}
                   <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
-                    Microsoft
+                    Lucky Group SAC
                   </div>
                 </div>
               </div>
@@ -300,16 +306,20 @@ const AboutPage = () => {
                 <div className="w-1/3 ">
                   {/* JOB TITLE */}
                   <div className="bg-white p-3 font-semibold rounded-b-lg rounded-s-lg">
-                    Freelancer{" "}
+                    Web and Mobile Developer
                   </div>
                   {/* JOB DESC */}
                   <div className="p-3 text-sm italic">
-                    I provided web solutions, applying a range of technologies
-                    to address client requirements.{" "}
+                    Development of a mobile application for my bachelor degree.
+                    Development of a landing page for a transport business.
                   </div>
                   {/* JOB DATE */}
                   <div className="p-3 text-red-400 text-sm font-semibold">
-                    2010 - 2019{" "}
+                    2019-2022
+                  </div>
+                  {/* JOB COMPANY */}
+                  <div className="p-1 rounded bg-white text-sm font-semibold w-fit">
+                    Freelance
                   </div>
                 </div>
                 {/* CENTER */}
@@ -321,7 +331,7 @@ const AboutPage = () => {
                   </div>
                 </div>
                 {/* RIGHT */}
-                <div className="w-1/3 "></div>
+                <div className="w-1/3"></div>
               </div>
             </motion.div>
           </div>
