@@ -65,7 +65,16 @@ const PortfolioPage = () => {
                 key={item.id}
               >
                 <div className="flex flex-col gap-4 text-white max-w-[80%]">
-                  <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl xl:text-7xl">
+                  {/* <h1 className="text-4xl font-bold md:text-5xl lg:text-6xl xl:text-7xl">
+                    {item.title}
+                  </h1> */}
+                  <h1
+                    className={`font-bold ${
+                      item.title.length > 30
+                        ? "text-3xl md:text-4xl lg:text-5xl xl:text-6xl"
+                        : "text-4xl md:text-5xl lg:text-6xl xl:text-7xl"
+                    }`}
+                  >
                     {item.title}
                   </h1>
                   <div className="relative w-80 h-56 md:w-96 md:h-64 lg:w-[500px] lg:h-[350px] xl:w-[600px] xl:h-[420px]">
@@ -74,9 +83,13 @@ const PortfolioPage = () => {
                   <p className="w-80 md:w96 lg:w-[500px] lg:text-lg xl:w-[600px]">
                     {item.desc}
                   </p>
-                  <Link href={item.link} target="_blank" className="flex justify-end">
-                    <button className="px-2 py-1 text-sm md:px-4 md:py-2 md:text-md lg:px-6 lg:py-3 lg:text-lg bg-white text-gray-600 font-semibold m-4 rounded">
-                      See
+                  <Link
+                    href={item.link}
+                    target="_blank"
+                    className="flex justify-end mb-2"
+                  >
+                    <button className="px-2 py-1 text-sm md:px-4 md:py-2 md:text-md lg:px-6 lg:py-3 lg:text-lg bg-white text-gray-900 font-semibold m-4 rounded">
+                      See Demo
                     </button>
                   </Link>
                 </div>
@@ -86,7 +99,9 @@ const PortfolioPage = () => {
         </div>
       </div>
       <div className="w-screen h-screen flex flex-col gap-16 items-center justify-center text-center">
-        <h1 className="text-8xl md:text-9xl lg:text-10xl xl:text-11xl">Do you have a project?</h1>
+        <h1 className="text-8xl md:text-9xl lg:text-10xl xl:text-11xl">
+          Do you have a project?
+        </h1>
         <div className="relative">
           <motion.svg
             animate={{ rotate: 360 }}
