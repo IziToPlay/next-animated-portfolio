@@ -16,7 +16,7 @@ const Homepage = () => {
         {/* IMAGE CONTAINER */}
         <div className="h-1/2 lg:h-full lg:w-1/2 relative">
           <Image
-            src="https://res.cloudinary.com/dlrw6guss/image/upload/v1713296673/Portfolio/photo_jdnn8o.png"
+            src="https://res.cloudinary.com/dlrw6guss/image/upload/v1713296673/Portfolio/photo_profile.png"
             alt=""
             fill
             className="object-contain"
