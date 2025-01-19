@@ -28,15 +28,7 @@ const items = [
     desc: "Hotel & Resort website designed and developed as part of my formation as web developer.",
     img: "https://res.cloudinary.com/dlrw6guss/image/upload/v1713048184/Portfolio/project2_genz5v.png?auto=compress&cs=tinysrgb&w=1600&lazy=load",
     link: "https://classy-sfogliatella-cd1f65.netlify.app",
-  },
-  {
-    id: 4,
-    color: "from-purple-300 to-red-300",
-    title: "Out Here Trails Hotel & Resort Landing Page",
-    desc: "Hotel & Resort website designed and developed as part of my formation as web developer.",
-    img: "https://res.cloudinary.com/dlrw6guss/image/upload/v1713048184/Portfolio/project2_genz5v.png?auto=compress&cs=tinysrgb&w=1600&lazy=load",
-    link: "https://classy-sfogliatella-cd1f65.netlify.app",
-  },
+  }
 ];
 
 const PortfolioPage = () => {
